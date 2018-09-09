@@ -1,0 +1,25 @@
+.banner {
+  width: 60%;
+  height: 400px;
+  margin: 2% auto 0 20%;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.main-content {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.main-content img {
+  width: 35%;
+  height: auto;
+  float: right;
+  margin: 1%;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(194,190,194,1);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(194,190,194,1);
+  box-shadow: 3px 3px 5px 0px rgba(194,190,194,1);
+}
