@@ -9,7 +9,21 @@ var octopath = '<iframe width="100%" height="400px" src="https://www.youtube.com
 var battleforazeroth = '<iframe width="100%" height="400px" src="https://www.youtube.com/embed/jSJr3dXZfcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 var godofwar = '<iframe width="100%" height="400" src="https://www.youtube.com/embed/K0u_kAWLJOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 
-function trailer(embedlink, movietitle) {
-  var div = document.getElementById(movietitle);
-  div.innerHTML += embedlink;
+let triggered = [false,false,false,false,false,false,false,false,false,false];
+
+function trailer(embedlink, movietitle, trigIndex) {
+	var div = document.getElementById(movietitle);
+	if(!triggered[trigIndex]) {
+		div.innerHTML += embedlink;
+		triggered[trigIndex] = true;
+	} else {
+		var childs = div.childNodes;
+		for (var i = 0; i < childs.length; i++) {
+			var thisChild = childs[i];
+			if (thisChild.nodeName == "IFRAME") {
+				div.removeChild(thisChild);
+			}
+		}
+		triggered[trigIndex] = false;
+	}
 }
