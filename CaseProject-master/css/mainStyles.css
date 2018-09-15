@@ -35,6 +35,24 @@ html, body {
   color: white;
 }
 
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+#topButton:hover {
+  background-color: #555;
+}
+
 .footer {
   clear: both;
   width: 100%;
