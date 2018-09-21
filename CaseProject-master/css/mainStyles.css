@@ -53,6 +53,34 @@ html, body {
   background-color: #555;
 }
 
+/* JS info pull down styles */
+
+#info img {
+  width: 30%;
+  height: auto;
+  max-height: 600px;
+  margin-right: 8%;
+  position: relative;
+  display: inline-block;
+}
+
+div#info {
+  width: 98%;
+  border-radius: 5px;
+  padding: 1%;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+}
+
+div#info-right {
+  width: 53%;
+  position: relative;
+  right: 0;
+  display: inline-block;
+  font-size: 20px !important;
+}
+
 .footer {
   clear: both;
   width: 100%;
